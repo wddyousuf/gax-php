@@ -1,5 +1,5 @@
 {
-    "name": "wddyousuf/gax-php",
+    "name": "google/gax",
     "type": "library",
     "description": "Google API Core for PHP",
     "keywords": ["google"],
