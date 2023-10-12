@@ -259,6 +259,9 @@ class RequestBuilder
         $template = new AbsoluteResourceTemplate($uriTemplate);
 
         try {
+            if ($uriTemplate==='/v1/{parent=projects/*/locations/*/voices/*}:SynthesizeLongAudio'){
+                return '/v1/'.$bindings['parent'].':SynthesizeLongAudio';
+            }
             return $template->render($bindings);
         } catch (ValidationException $e) {
             return null;
